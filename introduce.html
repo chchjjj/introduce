@@ -4,8 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #container{
+            width: 800px;
+            margin: 50px auto;
+        }
+
+        #sidebar{
+            width: 250px;
+            height: 800px;
+            background-color:rgb(235, 237, 238) ;
+            float: left;
+            text-align: center;         
+        }
+
+        #contents{
+            width: 550px;
+            height: 800px;
+            background-color: #e9f4fa;
+            float: left;
+            padding: 30px;
+            box-sizing: border-box; 
+        }
+
+        .box{
+            width: 150px;
+            height: 150px;
+            background-image: url("../media/img.jpg");
+            background-color: white;
+            background-repeat: no-repeat;
+            border-radius: 50%;  
+            margin: 50px;          
+        }
+
+        a{
+            color: black;
+            font-size: large;
+            text-decoration: underline;
+        }
+        
+        .list-style{
+            list-style-type : circle;
+        }
+
+        table{            
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }    
+        
+        tr, td, th{
+            font-size: 15px;
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 10px 10px;
+        }
+
+    </style>
 </head>
 <body>
-    자기소개 페이지
+    <div id="container">
+        <!-- 사이드바 -->
+        <div id="sidebar">
+            <div class="box" style="background-size: contain;"> </div>
+            <h2>안녕하세요!</h2>
+            자기소개 페이지입니다. 
+            <p><b>★ 부평더조은컴퓨터아카데미 ★</b></p>
+            <a href="https://tjoeun.atosoft.kr/" target="_blank"> >>수강생 페이지<< </a>
+        </div>
+
+        <!-- 메인영역 -->
+        <div id="contents">
+            <h2>자기소개</h2>
+
+            현재 HTML/CSS 공부 중입니다. <br>
+            앞으로도 <mark>화이팅!</mark>
+
+            <h3>학습한 내용</h3>
+            <ul>
+                <li>자바
+                    <ul>
+                        <li class="list-style">클래스, 메소드</li>
+                        <li class="list-style">상속</li>
+                        <li class="list-style">HashMap, ArrayList</li>
+                    </ul>
+                </li>
+                <br>
+                <li>오라클
+                    <ul>
+                        <li class="list-style">SELECT, INSERT, UPDATE,DELETE</li>
+                        <li class="list-style">테이블, 서브쿼리, 조인</li>
+                        <li class="list-style">프로시저, 트리거</li>
+                    </ul>
+                </li>
+                <br>
+                <li>html/css(현재 진행중)</li>
+            </ul>
+
+            <h3>기타</h3>
+
+            <table>
+                <tr>
+                    <th>E-mail</th>
+                    <td>test@naver.com</td>
+                </tr>
+                <tr>
+                    <th>homepage</th>
+                    <td>https://chchjjj.github.io/introduce/introduce.html</td>
+                </tr>
+            </table>
+
+        </div>
+        
+    </div>
+
 </body>
 </html>
