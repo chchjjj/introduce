@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 자기소개 추가 조건 -->
+     <!-- (1) 현재시간(1초마다 업데이트) 필수 추가 (위치,크기 상관x)
+          (2)  업뎃예정(카페글 본문 확인해도 됨 ! )-->
     <style>
         #container{
             width: 800px;
@@ -60,6 +63,14 @@
             padding: 10px 10px;
         }
 
+        .time{
+            margin: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(98, 100, 223);
+        }
+
     </style>
 </head>
 <body>
@@ -71,6 +82,8 @@
             자기소개 페이지입니다. 
             <p><b>★ 부평더조은컴퓨터아카데미 ★</b></p>
             <a href="https://tjoeun.atosoft.kr/" target="_blank"> >>수강생 페이지<< </a>
+            <br>
+            <div class="time"></div>
         </div>
 
         <!-- 메인영역 -->
@@ -120,3 +133,11 @@
 
 </body>
 </html>
+<script>
+    setInterval(() => {
+        let datetime = new Date();
+        let obj = document.querySelector(".time");
+        let time = datetime.getHours() + ":" + datetime.getMinutes() + ":" + datetime.getSeconds();
+        obj.innerHTML = time;
+    }, 1000);
+</script>
