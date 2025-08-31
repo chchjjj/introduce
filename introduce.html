@@ -123,12 +123,16 @@
             cursor: pointer;
         }
 
-        #sidebar2:hover .sub-menu{
+        #sidebar2 .sub-menu:hover {
+            background-color: rgb(247, 199, 207);
+        }
+
+        .top-menu:hover .sub-menu{ 
             display: block;
         }
 
-        #sidebar2 .sub-menu:hover {
-            background-color: rgb(247, 199, 207);
+        .top-menu{
+            display: inline-block;
         }
 
     </style>
@@ -200,15 +204,16 @@
 
         </div>
         
-        <!-- 오른쪽 사이드바  -->
+        <!-- 오른쪽 사이드바  -->        
         <div id="sidebar2">
             <h3> 기타정보 </h3>
-            <div class="main-menu">Dropdown</div>
-            <div class="sub-menu">aaa</div>
-            <div class="sub-menu">bbb</div>
-            <div class="sub-menu">ccc</div>
+            <div class="top-menu">
+                <div class="main-menu">Dropdown</div>                
+                <div class="sub-menu">aaa</div>
+                <div class="sub-menu">bbb</div>
+                <div class="sub-menu">ccc</div>            
+            </div>
         </div>
-        
     </div>
 
 </body>
