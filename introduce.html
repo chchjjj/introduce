@@ -110,8 +110,7 @@
             width: 250px;
             box-sizing: border-box; 
             cursor: pointer;
-            font-weight: bold;         
-            
+            font-weight: bold;                    
         }
 
         .sub-menu{
@@ -121,7 +120,7 @@
             box-sizing: border-box;
             display : none; 
             padding: 10px;            
-            cursor: pointer;
+            cursor: pointer;                      
         }
 
         #sidebar2 .sub-menu:hover {
@@ -129,12 +128,13 @@
         }
 
         .top-menu:hover .sub-menu{ 
-            display: block;
+            display: block;            
         }
 
         .top-menu{
             display: inline-block;
-            margin-bottom: 20px;            
+            margin-bottom: 20px;
+            position: absolute;  
         }
 
         .scriptText{
@@ -145,9 +145,10 @@
             margin: 20px;
         }
 
-        #sidebar2 img{
+        #sidebar2 img{            
             margin-top: 360px;
             margin-left : 70px;
+            position: fixed;
         }
 
     </style>
@@ -232,12 +233,12 @@
                 <div class="sub-menu" onclick="fnPopup2()">노래</div>
                 <div class="sub-menu" onclick="fnPopup3()">스포츠</div>                          
             </div>
-            <div class="top-menu">
+            <!-- <div class="top-menu">
                 <div class="main-menu">Dropdown2</div>                
                 <div class="sub-menu">aaa</div>
                 <div class="sub-menu">bbb</div>
                 <div class="sub-menu">ccc</div>                          
-            </div>
+            </div> -->
             <div>
                 <img id="image" src="media/짱구1.PNG" width="110" height="150">
             </div>
