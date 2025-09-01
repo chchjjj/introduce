@@ -135,6 +135,13 @@
             display: inline-block;
         }
 
+        .scriptText{
+            color: rgb(240, 157, 202);
+            font-size: 20px;
+            font-weight: 500;
+            font-style: italic;
+        }
+
     </style>
 </head>
 <body>    
@@ -202,6 +209,8 @@
                 </tr>
             </table>
 
+            <div id="text" class="scriptText"></div>
+
         </div>
         
         <!-- 오른쪽 사이드바  -->        
@@ -219,10 +228,30 @@
 </body>
 </html>
 <script>
+    // 실시간 표시
     setInterval(() => {
         let datetime = new Date();
         let obj = document.querySelector(".time");
         let time = datetime.getHours() + ":" + datetime.getMinutes() + ":" + datetime.getSeconds();
         obj.innerHTML = time;
     }, 1000);
+
+    // 인사말 
+    let title = "자기소개 페이지에 오신 것을 환영합니다!";
+    let text = document.querySelector("#text");
+    let i = 0; // 글자 길이 세는거
+
+    let func = setInterval(() => {
+        let word = title.charAt(i++);
+        text.innerHTML += word;
+
+        if(i>title.length){
+            text.innerHTML = "";
+            i = 0;
+        }
+
+    }, 170);
+
+
+
 </script>
