@@ -144,6 +144,11 @@
             margin: 20px;
         }
 
+        #sidebar2 img{
+            margin-top: 360px;
+            margin-left : 70px;
+        }
+
     </style>
 </head>
 <body>    
@@ -231,7 +236,7 @@
                 <div class="sub-menu">ccc</div>                          
             </div>
             <div>
-                <img src="media/짱구1.PNG" width="100" height="150">
+                <img id="image" src="media/짱구1.PNG" width="110" height="150">
             </div>
         </div>
     </div>
@@ -263,6 +268,7 @@
 
     }, 180);
 
+    // 기타정보 드롭다운 팝업
     function fnPopup1(){
         let top = (screen.availHeight-300) / 2;
         let left = (screen.availWidth-400) / 2;
@@ -280,6 +286,18 @@
         let left = (screen.availWidth-400) / 2;
         window.open("media/배구.PNG", "sport", `width=800, height=900, left=${left}, top=${top}`);
     }
+
+    // 짱구그림 마우스 이벤트
+    let img = document.querySelector("#image");
+    img.addEventListener("mouseover", ()=>{
+        img.src = "media/짱구2.PNG"
+    });
+
+    img.addEventListener("mouseout", ()=>{
+        img.src = "media/짱구1.PNG"
+        img.style.width = "110px";
+        img.style.height = "150px";
+    });
 
 
 
