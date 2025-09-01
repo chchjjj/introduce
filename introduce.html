@@ -133,6 +133,7 @@
 
         .top-menu{
             display: inline-block;
+            margin-bottom: 20px;
         }
 
         .scriptText{
@@ -140,6 +141,7 @@
             font-size: 20px;
             font-weight: 500;
             font-style: italic;
+            margin: 20px;
         }
 
     </style>
@@ -217,10 +219,16 @@
         <div id="sidebar2">
             <h3> 기타정보 </h3>
             <div class="top-menu">
-                <div class="main-menu">Dropdown</div>                
+                <div class="main-menu">관심사</div>                
+                <div class="sub-menu" onclick="fnPopup1">노래</div>
+                <div class="sub-menu" onclick="fnPopup2">게임</div>
+                <div class="sub-menu" onclick="fnPopup3">스포츠</div>                          
+            </div>
+            <div class="top-menu">
+                <div class="main-menu">Dropdown2</div>                
                 <div class="sub-menu">aaa</div>
                 <div class="sub-menu">bbb</div>
-                <div class="sub-menu">ccc</div>            
+                <div class="sub-menu">ccc</div>                          
             </div>
         </div>
     </div>
@@ -237,7 +245,7 @@
     }, 1000);
 
     // 인사말 
-    let title = "자기소개 페이지에 오신 것을 환영합니다!";
+    let title = "자기소개 페이지에 오신 것을 환영합니다! ^_^";
     let text = document.querySelector("#text");
     let i = 0; // 글자 길이 세는거
 
@@ -250,7 +258,25 @@
             i = 0;
         }
 
-    }, 170);
+    }, 180);
+
+    function fnPopup1(){
+        let top = (screen.availHeight-300) / 2;
+        let left = (screen.availWidth-400) / 2;
+        window.open();
+    }
+
+    function fnPopup2(){
+        let top = (screen.availHeight-300) / 2;
+        let left = (screen.availWidth-400) / 2;
+        window.open();
+    }
+
+    function fnPopup3(){
+        let top = (screen.availHeight-300) / 2;
+        let left = (screen.availWidth-400) / 2;
+        window.open("media/배구.PNG");
+    }
 
 
 
