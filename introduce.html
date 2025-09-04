@@ -166,12 +166,14 @@
             margin-left: 20px;
             width: 50px;
             height: 50px;
+            background-image: url("media/clover.png");
         }
 
         .clover2 img{           
             margin-left: 20px;
             width: 50px;
             height: 50px;
+            background-image: url("media/clover.png");
         }
 
         
@@ -259,13 +261,13 @@
                 <div class="sub-menu" onclick="fnPopup3()">스포츠</div>                          
             </div>
             <p>
-            <span class="clover"><img src="media/clover.png"></span>
-            <span class="clover"><img src="media/clover.png"></span>
-            <span class="clover"><img src="media/clover.png"></span>
+            <span class="clover"></span>
+            <span class="clover"></span>
+            <span class="clover"></span>
             </p>
-            <span class="clover2"><img src="media/clover.png"></span>
-            <span class="clover2"><img src="media/clover.png"></span>
-            <span class="clover2"><img src="media/clover.png"></span>
+            <span class="clover2"></span>
+            <span class="clover2"></span>
+            <span class="clover2"></span>
 
             <div>
                 <img id="eventImg" src="media/짱구1.PNG" width="110" height="150">
@@ -320,7 +322,7 @@
     }
 
     // 짱구그림 마우스 이벤트
-    let img = document.querySelector("#image");
+    let img = document.querySelector("#eventImg");
     img.addEventListener("mouseover", ()=>{
         img.src = "media/짱구2.PNG"
     });
