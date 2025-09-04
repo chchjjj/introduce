@@ -156,27 +156,26 @@
         }
 
         #eventImg{            
-            margin-top: 60px;
+            margin-top: 80px;
             margin-left : 70px;
             position: fixed;
         }
 
         .clover img{
-            margin-top: 250px;
-            margin-left: 20px;
+            margin-top: 200px;
+            margin-left: 22px;
             width: 50px;
             height: 50px;
-            background-image: url("media/clover.png");
+            cursor: pointer;
         }
 
-        .clover2 img{           
-            margin-left: 20px;
+        .clover2 img{    
+            margin-top: 20px;       
+            margin-left: 22px;
             width: 50px;
             height: 50px;
-            background-image: url("media/clover.png");
-        }
-
-        
+            cursor: pointer;
+        }        
 
     </style>
 </head>
@@ -259,15 +258,16 @@
                 <div class="sub-menu" onclick="fnPopup1()">게임</div>
                 <div class="sub-menu" onclick="fnPopup2()">노래</div>
                 <div class="sub-menu" onclick="fnPopup3()">스포츠</div>                          
-            </div>
+            </div>                  
             <p>
-            <span class="clover"></span>
-            <span class="clover"></span>
-            <span class="clover"></span>
-            </p>
-            <span class="clover2"></span>
-            <span class="clover2"></span>
-            <span class="clover2"></span>
+                <span class="clover"><img src="media/clover.png" onclick="fnLucky1()"></span>
+                <span class="clover"><img src="media/clover.png" onclick="fnLucky2()"></span>
+                <span class="clover"><img src="media/clover.png" onclick="fnLucky3()"></span>
+            </p>   
+            <div>　▲ 행운의 메세지를 뽑아보세요 ▼</div>        
+            <span class="clover2"><img src="media/clover.png" onclick="fnLucky4()"></span>
+            <span class="clover2"><img src="media/clover.png" onclick="fnLucky5()"></span>
+            <span class="clover2"><img src="media/clover.png" onclick="fnLucky6()"></span>
 
             <div>
                 <img id="eventImg" src="media/짱구1.PNG" width="110" height="150">
@@ -320,6 +320,44 @@
         let left = (screen.availWidth-400) / 2;
         window.open("media/배구.PNG", "sport", `width=800, height=900, left=${left}, top=${top}`);
     }
+
+    // 클로버 메세지 팝업
+    function fnLucky1(){
+        let top = (screen.availHeight-300) / 2;
+        let left = (screen.availWidth-400) / 2;
+        window.open();
+    }
+
+    function fnLucky2(){
+        let top = (screen.availHeight-300) / 2;
+        let left = (screen.availWidth-400) / 2;
+        window.open();
+    }
+
+    function fnLucky3(){
+        let top = (screen.availHeight-300) / 2;
+        let left = (screen.availWidth-400) / 2;
+        window.open();
+    }
+
+    function fnLucky4(){
+        let top = (screen.availHeight-300) / 2;
+        let left = (screen.availWidth-400) / 2;
+        window.open();
+    }
+
+    function fnLucky5(){
+        let top = (screen.availHeight-300) / 2;
+        let left = (screen.availWidth-400) / 2;
+        window.open();
+    }
+
+    function fnLucky6(){
+        let top = (screen.availHeight-300) / 2;
+        let left = (screen.availWidth-400) / 2;
+        window.open();
+    }
+
 
     // 짱구그림 마우스 이벤트
     let img = document.querySelector("#eventImg");
